@@ -42,6 +42,13 @@
          <artifactId>slf4j-simple</artifactId>
          <version>1.7.30</version>
       </dependency>
+      <dependency> <!-- necessary for Java 9+ -->
+         <groupId>org.apache.tomcat</groupId>
+         <artifactId>annotations-api</artifactId>
+         <version>6.0.53</version>
+         <scope>provided</scope>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.slf4j/slf4jsimple-->
    </dependencies>
       
    <build>
@@ -79,8 +86,8 @@
             <configuration>
                <protocArtifact>com.google.protobuf:protoc:3.12.0:exe:${os.detected.classifier}</protocArtifact>
                <pluginId>grpc-java</pluginId>
-               <pluginArtifact>io.grpc:protoc-gen-grpcjava:1.38.0:exe:${os.detected.classifier}</pluginArtifact>
-               <protoSourceRoot>../common_proto_files</protoSourceRoot>
+               <pluginArtifact>io.grpc:protoc-gen-grpc-java:1.32.1:exe:${os.detected.classifier}</pluginArtifact>
+               <protoSourceRoot>common_proto_files</protoSourceRoot>
             </configuration>
             <executions>
                <execution>

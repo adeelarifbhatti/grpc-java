@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "com.grpc.javamemcache";
+service MemCache {
+   rpc query (Country) returns (Capital) {}
+}
+message Country {
+   string querying = 1;
+   string name = 2;
+}
+message Capital {
+   string message = 1;
+}
