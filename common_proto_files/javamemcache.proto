@@ -1,5 +1,5 @@
 syntax = "proto3";
-option java_package = "com.grpc.javamemcache";
+option java_package = "com.grpc.javamemcache.proto";
 service MemCache {
    rpc query (Country) returns (Capital) {}
 }

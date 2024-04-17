@@ -88,6 +88,9 @@
                <pluginId>grpc-java</pluginId>
                <pluginArtifact>io.grpc:protoc-gen-grpc-java:1.32.1:exe:${os.detected.classifier}</pluginArtifact>
                <protoSourceRoot>common_proto_files</protoSourceRoot>
+                <outputBaseDirectory>src/main/java/</outputBaseDirectory>
+                <outputDirectory>src/main/java/</outputDirectory>
+                <clearOutputDirectory>false</clearOutputDirectory>
             </configuration>
             <executions>
                <execution>
