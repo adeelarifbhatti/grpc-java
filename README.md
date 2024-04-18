@@ -1,4 +1,4 @@
-# gRPC java Server Maven Project "Key Value"
+# gRPC java Server (Maven Project "Key Value")
 
 It uses openjdk-8-jdk, eclipse along with maven should be available on the machine.
 
